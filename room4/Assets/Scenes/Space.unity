@@ -13995,7 +13995,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522678607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -24551,6 +24551,7 @@ GameObject:
   - component: {fileID: 967538650}
   - component: {fileID: 967538649}
   - component: {fileID: 967538648}
+  - component: {fileID: 967538653}
   - component: {fileID: 967538652}
   m_Layer: 0
   m_Name: Telegram2
@@ -24642,11 +24643,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967538647}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.625672, y: 1.2924842, z: 9.71}
   m_Center: {x: 0.36215895, y: -0.05375783, z: 0.0000018622701}
+--- !u!114 &967538653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967538647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3900bc6fe9452004c86d792371485844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _noteImage: {fileID: 522678609}
 --- !u!1001 &972067578
 PrefabInstance:
   m_ObjectHideFlags: 0
