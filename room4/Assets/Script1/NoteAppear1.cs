@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NoteAppear : MonoBehaviour
+public class NoteAppear1 : MonoBehaviour
 {
     [SerializeField]
     private Image _noteImage;
