@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class NoteAppear : MonoBehaviour
 {
     [SerializeField]
-    private Image _noteImage;
+    private GameObject _noteImage;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            _noteImage.enabled = true;
+            _noteImage.SetActive(true);
         }
 
     }
@@ -22,7 +22,7 @@ public class NoteAppear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _noteImage.enabled = false;
+            _noteImage.SetActive(false);
         }
     }
 }
