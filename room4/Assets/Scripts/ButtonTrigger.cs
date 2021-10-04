@@ -6,34 +6,25 @@ using UnityEngine.UI;
 public class ButtonTrigger : MonoBehaviour
 {
     public InputField answer;
-    public string actualAns;
-    public GameObject door;
-    public GameObject key;
+
     public MouseLook mouseLook;
-    public GameObject door2img;
     public AudioSource Correct;
     public AudioSource Incorrect;
-    public AudioSource Dooropen;
-    [SerializeField] private Animator MyAnimationController;
+    public GameObject Collider;
+    public GameObject popup;
+    string[] actualAns = { "144", "190", "114", "7650" };
 
-
-    public void onSubmit()
+    public void onSubmit(int i)
     {
-        if (answer.text.ToUpper() == actualAns.ToUpper())
+        if (answer.text.ToUpper() == actualAns[i].ToUpper())
         {
-            door.SetActive(false);
-            door2img.SetActive(false);
+            
             mouseLook.enabled = true;
             Debug.Log("You did it!");
             //  MyAnimationController.SetBool("open", true);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             Correct.Play();
-            Dooropen.Play();
-
-            
-
-
+            Collider.SetActive(false);
+            popup.SetActive(false);
         }
         else
         {
